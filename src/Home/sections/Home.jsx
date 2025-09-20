@@ -13,7 +13,7 @@ function Home() {
         <div className="flex flex-col items-center lg:items-start gap-6 max-w-lg text-center lg:text-left">
           <p className="text-3xl md:text-7xl font-semibold">
             Hello, I’m{" "}
-            <span className="font-bold text-cyan-00 drop-shadow-[0_0_40px_#FFFFFF]">
+            <span className="font-bold drop-shadow-[0_0_40px_#FFFFFF]">
               Pedro Arthur
             </span>
           </p>
@@ -32,7 +32,7 @@ function Home() {
           <div className="flex gap-4 mt-4">
             <button onClick={() => abrirLink("https://github.com/arthurpedr")}>
               <img
-                className="w-10 cursor-pointer bg-[#2563EB] drop-shadow-[0_0_40px_#3B82F6] rounded-full p-1"
+                className="w-10 cursor-pointer text-gray-200 bg-[#2563EB] drop-shadow-[0_0_40px_#3B82F6] rounded-full p-1"
                 src="./branco-github.svg"
                 alt="github"
               />

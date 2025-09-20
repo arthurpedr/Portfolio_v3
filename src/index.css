@@ -8,12 +8,26 @@ html {
 }
 
 .underline-hover {
-  color: white;
+  color: rgb(232, 255, 255);
 }
 
 .underline-hover:hover {
-  color: #2563EB;
+  color: #ffffff;
   text-shadow: 
-    0 0 30px rgba(59, 130, 246, 0.7),
-    0 0 30px rgba(59, 130, 246, 0.4);
+    0 0 30px rgba(255, 255, 255, 0.7),
+    0 0 30px rgba(255, 255, 255, 0.4);
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.Footer-hover{
+  color: rgb(232, 225, 225);
+}
+
+.Footer-hover:hover {
+  color: #ffffff;
+  text-shadow:
+   0 0 30px rgba(255, 255, 255, 0.7),
+   0 0 30px rgba(255, 255, 255, 0.4);
+   filter: drop-shadow(0 0 10px #ffffff);
+    
 }

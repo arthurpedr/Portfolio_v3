@@ -23,8 +23,8 @@ function Servicos() {
       id="Serviços"
       className="flex w-full min-h-screen mx-auto justify-center items-center text-white"
     >
-      <div className=" flex flex-col items-center justify-center gap-40 max-w-[1280px] w-full overflow-hidden">
-        <p className="text-[40px] md:text-[80px] font-bold">Serviços</p>
+      <div className="flex flex-col items-center justify-center gap-40 max-w-[1280px] w-full overflow-hidden">
+        <p className="text-[40px] md:text-[80px] font-bold drop-shadow-[0_0_40px_#FFFFFF] py-10">Serviços</p>
         <div className="motion">
           
           {/* Carrossel para Direita */}
@@ -37,7 +37,6 @@ function Servicos() {
           </section>
 
           {/* Carrossel para Esquerda */}
-
           <section className="mb-10">
             <Carousel direction="left"
              items={carouselItems} />
