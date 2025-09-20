@@ -53,7 +53,7 @@ function Home() {
         {/* Imagem */}
         <div className="flex-shrink-0">
           <img
-            className="rounded-full w-60 h-60 md:w-120 md:h-120 object-cover shadow-lg shadow-[#3B82F6]/90"
+            className="rounded-full w-60 h-60 lg:w-120 lg:h-120 object-cover shadow-lg shadow-[#3B82F6]/90"
             src="/pedro.jpg"
             alt="Foto do desenvolvedor Pedro Arthur"
           />

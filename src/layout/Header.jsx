@@ -56,22 +56,22 @@ function Header() {
         <nav className="hidden md:flex items-center gap-8 text-x">
           <ul className="flex items-center gap-8">
             <li>
-              <a className="underline-hover" href="#Serviços">
+              <a className="underline-hover" href="#About">
                 About
               </a>
             </li>
             <li>
-              <a className="underline-hover" href="#Projetos">
+              <a className="underline-hover" href="#Serviços">
                 Serviços
               </a>
             </li>
             <li>
-              <a className="underline-hover" href="#Equipe">
+              <a className="underline-hover" href="#Projetos">
                 Projetos
               </a>
             </li>
             <li>
-              <a className="underline-hover" href="#Sobre">
+              <a className="underline-hover" href="#?">
                 ?
               </a>
             </li>
@@ -106,6 +106,15 @@ function Header() {
               <a
                 className="underline-hover"
                 onClick={toggleMenu}
+                href="#About"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                className="underline-hover"
+                onClick={toggleMenu}
                 href="#Serviços"
               >
                 Serviços
@@ -121,17 +130,8 @@ function Header() {
               </a>
             </li>
             <li>
-              <a
-                className="underline-hover"
-                onClick={toggleMenu}
-                href="#Equipe"
-              >
-                Equipe
-              </a>
-            </li>
-            <li>
-              <a className="underline-hover" onClick={toggleMenu} href="#Sobre">
-                Dúvidas
+              <a className="underline-hover" onClick={toggleMenu} href="#?">
+                ?
               </a>
             </li>
             <li>

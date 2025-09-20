@@ -28,7 +28,7 @@ const Carousel = ({ direction = 'right', items, className = '' }) => {
         {duplicatedItems.map((imagePath, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-30 h-28 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center p-4
+            className="flex-shrink-0 w-20 md:w-30 md:h-28 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center p-4
             border-t-4 border-t-blue-600
             border-r-4 border-r-cyan-300
             border-b-4 border-b-cyan-300

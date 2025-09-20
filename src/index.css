@@ -17,8 +17,3 @@ html {
     0 0 30px rgba(59, 130, 246, 0.7),
     0 0 30px rgba(59, 130, 246, 0.4);
 }
-
-/* Efeito de pausa ao passar o mouse */
-.motion:hover{
-  animation-play-state: paused;
-}

@@ -24,7 +24,7 @@ function Servicos() {
       className="flex w-full min-h-screen mx-auto justify-center items-center text-white"
     >
       <div className=" flex flex-col items-center justify-center gap-40 max-w-[1280px] w-full overflow-hidden">
-        <p className="text-[80px] font-bold">Serviços</p>
+        <p className="text-[40px] md:text-[80px] font-bold">Serviços</p>
         <div className="motion">
           
           {/* Carrossel para Direita */}
