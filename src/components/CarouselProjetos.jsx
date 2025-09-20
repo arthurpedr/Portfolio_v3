@@ -7,19 +7,21 @@ const projects = [
     id: 1, 
     title: "Landing Page LISA", 
     desc: "O LISA se destaca como um espaço dinâmico que fomenta a inovação tecnológica no Oeste Potiguar, oferecendo aos estudantes oportunidades de se envolverem em projetos concretos de automação e desenvolvimento de software, com aplicação prática e impacto regional. Com uma equipe multidisciplinar, o LISA desenvolve aplicaçãoes em automação e controle, inteligência artificial aplicada e desenvolvimento de software.", 
-    image: "./Lisa.png"
+    image: "./Lisa.png",
+    link: "https://lisa.ufersa.dev.br" // 🔗 link do projeto
   },
   { 
     id: 2, 
-    title: "Projeto 2", 
+    title: "Landing Page LISA", 
     desc: "O LISA se destaca como um espaço dinâmico que fomenta a inovação tecnológica no Oeste Potiguar, oferecendo aos estudantes oportunidades de se envolverem em projetos concretos de automação e desenvolvimento de software, com aplicação prática e impacto regional. Com uma equipe multidisciplinar, o LISA desenvolve aplicaçãoes em automação e controle, inteligência artificial aplicada e desenvolvimento de software.", 
-    image: "https://picsum.photos/800/400?random=2"
+    image: "./Lisa.png",
+    link: "https://outro-link.com"
   },
 ];
 
 const abrirLink = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  window.open(url, "_blank", "noopener,noreferrer");
+};
 
 export default function CarouselProjects() {
   const [current, setCurrent] = useState(0);
@@ -58,7 +60,6 @@ export default function CarouselProjects() {
         transition={{ duration: 0.5 }}
         onClick={() => setIsModalOpen(true)}
       >
-        
         <p className="text-2xl font-bold text-gray-800 mb-2">{projects[current].title}</p>
         <img
           src={projects[current].image}
@@ -106,8 +107,15 @@ export default function CarouselProjects() {
               <h2 className="text-2xl font-bold mb-2 text-black">
                 {projects[current].title}
               </h2>
-              <p className="text-gray-700">{projects[current].desc}</p>
-              
+              <p className="text-gray-700 mb-4">{projects[current].desc}</p>
+
+              {/* 🔗 Botão ver projeto */}
+              <button
+                onClick={() => abrirLink(projects[current].link)}
+                className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-lg"
+              >
+                Ver Projeto
+              </button>
             </motion.div>
           </motion.div>
         )}

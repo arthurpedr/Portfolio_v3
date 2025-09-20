@@ -4,11 +4,11 @@ function Footer() {
   };
 
   return (
-    <footer className="w-full min-h-[800px] flex justify-center items-center">
-      <div className="py-12 flex flex-col items-center gap-4 text-white">
+    <footer className="w-full h-[400px] flex justify-center items-center">
+      <div className="py-12 flex flex-col items-center gap-8 text-white">
         <div>
-          <nav className="flex items-center font-semibold text-[10px] md:text-lg">
-            <ul className="flex items-center gap-8">
+          <nav className="flex items-center font-semibold text-[10px] md:text-[20px]">
+            <ul className="flex items-center gap-10">
               <li>
                 <a className="Footer-hover" href="#About">
                   About
@@ -60,11 +60,11 @@ function Footer() {
             </button>
           </div>
         </div>
-        <div className="text-[12px]">
+        <div className="text-[18px]">
           <p>
             &copy; 2025 Developed by{" "}
-            <a href="#Home">
-              DEV <span className="text-cyan-300">PEDRO</span>
+            <a href="#Home" className="underline underline-offset-4 decoration-1">
+              DEV PEDRO
             </a>
           </p>
         </div>

@@ -22,7 +22,7 @@ function Home() {
           </p>
           {/* Botão CV */}
           <a
-            className="px-6 py-2 bg-[#2563EB] hover:bg-[#3B82F6] hover:shadow-lg shadow-[#3B82F6]/90 rounded-full text-lg font-medium transition"
+            className="px-6 py-2 bg-blue-600 hover:bg-blue-500 hover:shadow-lg shadow-[#3B82F6]/90 rounded-[8px] text-lg font-medium transition-all duration-300"
             href="/Currículo.pdf"
             download="Currículo.pdf"
           >
@@ -51,12 +51,16 @@ function Home() {
           </div>
         </div>
         {/* Imagem */}
-        <div className="flex-shrink-0">
+        <div className="relative flex-shrink-0">
           <img
             className="rounded-full w-60 h-60 lg:w-120 lg:h-120 object-cover shadow-lg shadow-[#3B82F6]/90"
-            src="/pedro.jpg"
+            src="/pedro-02.png"
             alt="Foto do desenvolvedor Pedro Arthur"
           />
+          <div className="absolute inset-0 bg-black/10 rounded-full"></div>
+
+          {/* Conteúdo sobre a imagem */}
+          <div className="absolute inset-0 flex items-center justify-center"></div>
         </div>
       </div>
     </section>
