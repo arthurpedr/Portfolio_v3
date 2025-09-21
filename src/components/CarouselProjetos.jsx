@@ -41,11 +41,11 @@ export default function CarouselProjects() {
     setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
 
   return (
-    <div className="relative mx-4 md:mx-0 md:w-full">
+    <div className="relative md:w-full">
       {/* Botão esquerda */}
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-5 rounded-full"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-3 md:p-5 rounded-full"
       >
         ◀
       </button>
@@ -53,7 +53,7 @@ export default function CarouselProjects() {
       {/* Card animado */}
       <motion.div
         key={projects[current].id}
-        className="p-6 bg-white shadow-lg rounded-2xl min-h-[700px] text-center cursor-pointer flex flex-col items-center"
+        className="p-6 bg-white shadow-lg rounded-2xl md:min-h-[700px] text-center cursor-pointer flex flex-col items-center"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -50 }}
@@ -71,7 +71,7 @@ export default function CarouselProjects() {
       {/* Botão direita */}
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-5 rounded-full"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-3 md:p-5 rounded-full"
       >
         ▶
       </button>
@@ -80,7 +80,7 @@ export default function CarouselProjects() {
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
-            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-6 md:p-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -107,7 +107,7 @@ export default function CarouselProjects() {
               <h2 className="text-2xl font-bold mb-2 text-black">
                 {projects[current].title}
               </h2>
-              <p className="text-gray-700 mb-4">{projects[current].desc}</p>
+              <p className="text-gray-700 mb-4 text-justify">{projects[current].desc}</p>
 
               {/* 🔗 Botão ver projeto */}
               <button

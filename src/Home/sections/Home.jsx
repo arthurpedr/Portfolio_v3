@@ -54,13 +54,28 @@ function Home() {
         <div className="relative flex-shrink-0">
           <img
             className="rounded-full w-60 h-60 lg:w-120 lg:h-120 object-cover shadow-lg shadow-[#3B82F6]/90"
+            style={{
+              animation: "slideUpDown 2s ease-in-out infinite",
+            }}
             src="/pedro-02.png"
             alt="Foto do desenvolvedor Pedro Arthur"
           />
-          <div className="absolute inset-0 bg-black/10 rounded-full"></div>
+          <style>
+            {`
+          @keyframes slideUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+          }
+        `}
+          </style>
 
-          {/* Conteúdo sobre a imagem */}
-          <div className="absolute inset-0 flex items-center justify-center"></div>
+          {/*Claridadee da imagem*/}
+          <div
+            className="absolute inset-0 bg-black/10 rounded-full"
+            style={{
+              animation: "slideUpDown 2s ease-in-out infinite",
+            }}
+          ></div>
         </div>
       </div>
     </section>

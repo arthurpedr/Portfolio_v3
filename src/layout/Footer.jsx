@@ -7,7 +7,7 @@ function Footer() {
     <footer className="w-full h-[400px] flex justify-center items-center">
       <div className="py-12 flex flex-col items-center gap-8 text-white">
         <div>
-          <nav className="flex items-center font-semibold text-[10px] md:text-[20px]">
+          <nav className="flex items-center font-semibold md:text-[20px]">
             <ul className="flex items-center gap-10">
               <li>
                 <a className="Footer-hover" href="#About">
@@ -22,11 +22,6 @@ function Footer() {
               <li>
                 <a className="Footer-hover" href="#Projetos">
                   Projetos
-                </a>
-              </li>
-              <li>
-                <a className="Footer-hover" href="#?">
-                  ?
                 </a>
               </li>
               <li>
@@ -60,7 +55,7 @@ function Footer() {
             </button>
           </div>
         </div>
-        <div className="text-[18px]">
+        <div className="md:text-[18px]">
           <p>
             &copy; 2025 Developed by{" "}
             <a href="#Home" className="underline underline-offset-4 decoration-1">

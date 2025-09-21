@@ -71,11 +71,6 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="underline-hover" href="#?">
-                ?
-              </a>
-            </li>
-            <li>
               <a className="underline-hover" href="#Contato">
                 Contato
               </a>

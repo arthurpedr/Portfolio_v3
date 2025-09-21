@@ -107,18 +107,11 @@ function ContactForm() {
       {/* Botão de Envio */}
       <button
         type="submit"
-        className="w-full h-[55px] bg-blue-600 rounded-[8px] text-[#EFECFF] font-[700] cursor-pointer hover:bg-transparent hover:border border-white transition-all duration-300"
+        className="w-full h-[55px] border-blue-600 bg-blue-600 rounded-[8px] text-[#EFECFF] font-[700] cursor-pointer hover:bg-transparent border hover:border-white transition-all duration-300"
       >
         Enviar Mensagem
       </button>
 
-      {/* Feedback de envio */}
-      {status === "sucesso" && (
-        <p className="text-green-600 font-medium">Mensagem enviada com sucesso!</p>
-      )}
-      {status === "erro" && (
-        <p className="text-red-600 font-medium">Erro ao enviar. Tente novamente.</p>
-      )}
     </form>
   );
 }
