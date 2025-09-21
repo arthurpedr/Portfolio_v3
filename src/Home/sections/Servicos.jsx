@@ -21,9 +21,9 @@ function Servicos() {
   return (
     <section
       id="Serviços"
-      className="flex w-full min-h-screen mx-auto justify-center items-center text-white"
+      className="flex w-full md:min-h-screen mx-auto justify-center items-center text-white"
     >
-      <div className="flex flex-col items-center justify-center gap-40 max-w-[1280px] w-full overflow-hidden">
+      <div className="flex flex-col items-center justify-center max-w-[1280px] w-full overflow-hidden">
         <p className="text-[40px] md:text-[80px] font-bold drop-shadow-[0_0_40px_#FFFFFF] py-10">Serviços</p>
         <div className="motion">
           

@@ -57,7 +57,7 @@ function Header() {
           <ul className="flex items-center gap-8">
             <li>
               <a className="underline-hover" href="#About">
-                About
+                Sobre
               </a>
             </li>
             <li>
@@ -122,11 +122,6 @@ function Header() {
                 href="#Projetos"
               >
                 Projetos
-              </a>
-            </li>
-            <li>
-              <a className="underline-hover" onClick={toggleMenu} href="#?">
-                ?
               </a>
             </li>
             <li>

@@ -11,7 +11,7 @@ function Footer() {
             <ul className="flex items-center gap-10">
               <li>
                 <a className="Footer-hover" href="#About">
-                  About
+                  Sobre
                 </a>
               </li>
               <li>
