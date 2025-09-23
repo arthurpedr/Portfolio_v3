@@ -18,7 +18,7 @@ function About() {
       ],
     },
     {
-      title: "Curso de Digitação",
+      title: "Curso de Hardware",
       description: "Módulo Iniciante",
       images: [
         { src: "Digitaçao.png", alt: "Descrição da imagem 1" },

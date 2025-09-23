@@ -21,12 +21,17 @@ function Home() {
             Desenvolvedor Front-End
           </p>
           {/* Botão CV */}
+          
           <a
-            className="px-6 py-2 bg-blue-600 hover:bg-blue-500 hover:shadow-lg shadow-[#3B82F6]/90 rounded-[8px] text-lg font-medium transition-all duration-300"
+            className="group relative inline-block overflow-hidden border border-blue-600 px-6 py-2 focus:ring-3 focus:outline-hidden rounded-[8px] hover:shadow-lg shadow-[#3B82F6]/90"
             href="/Currículo.pdf"
             download="Currículo.pdf"
           >
-            Download CV
+            <span className="absolute inset-x-0 top-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:h-full"></span>
+
+            <span className="relative text-lg font-medium text-white">
+              Download CV
+            </span>
           </a>
           {/* Ícones */}
           <div className="flex gap-4 mt-4">
