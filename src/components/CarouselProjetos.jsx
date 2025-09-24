@@ -45,7 +45,7 @@ export default function CarouselProjects() {
       {/* Botão esquerda */}
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-3 md:p-5 rounded-full"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-3 md:p-5 rounded-full cursor-pointer"
       >
         ◀
       </button>
@@ -71,7 +71,7 @@ export default function CarouselProjects() {
       {/* Botão direita */}
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-3 md:p-5 rounded-full"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-500 text-white p-3 md:p-5 rounded-full cursor-pointer"
       >
         ▶
       </button>
@@ -94,7 +94,7 @@ export default function CarouselProjects() {
               {/* Botão fechar */}
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="absolute top-3 right-3 bg-red-600 hover:bg-red-500 text-white px-2 rounded-lg"
+                className="absolute top-3 right-3 bg-red-600 hover:bg-red-500 text-white px-2 rounded-lg cursor-pointer"
               >
                 X
               </button>
@@ -112,7 +112,7 @@ export default function CarouselProjects() {
               {/* 🔗 Botão ver projeto */}
               <button
                 onClick={() => abrirLink(projects[current].link)}
-                className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-lg"
+                className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-lg cursor-pointer"
               >
                 Ver Projeto
               </button>
