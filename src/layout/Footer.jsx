@@ -36,7 +36,7 @@ function Footer() {
           <div className="flex justify-center lg:justify-start gap-4">
             <button onClick={() => abrirLink("https://github.com/arthurpedr")}>
               <img
-                className="w-10 cursor-pointer bg-[#3B82F6] hover:shadow-lg shadow-[#FFFFFF]/99 rounded-full p-1"
+                className="w-10 cursor-pointer bg-[#3B82F6] hover:shadow-lg shadow-[#FFFFFF]/99 rounded-[8px] p-1"
                 src="./branco-github.svg"
                 alt="github"
               />
@@ -48,7 +48,7 @@ function Footer() {
               }
             >
               <img
-                className="w-10 cursor-pointer bg-[#3B82F6] hover:shadow-lg shadow-[#FFFFFF]/99 rounded-full p-1"
+                className="w-10 cursor-pointer bg-[#3B82F6] hover:shadow-lg shadow-[#FFFFFF]/99 rounded-[8px] p-1"
                 src="./branco-instagram.svg"
                 alt="instagram"
               />

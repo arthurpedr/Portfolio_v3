@@ -37,7 +37,7 @@ function Home() {
           <div className="flex gap-4 mt-4">
             <button onClick={() => abrirLink("https://github.com/arthurpedr")}>
               <img
-                className="w-10 cursor-pointer text-gray-200 bg-[#2563EB] drop-shadow-[0_0_40px_#3B82F6] rounded-full p-1"
+                className="w-10 cursor-pointer text-gray-200 bg-[#2563EB] drop-shadow-[0_0_40px_#3B82F6] rounded-[8px] p-1"
                 src="./branco-github.svg"
                 alt="github"
               />
@@ -48,7 +48,7 @@ function Home() {
               }
             >
               <img
-                className="w-10 cursor-pointer bg-[#2563EB] drop-shadow-[0_0_40px_#3B82F6]  rounded-full p-1"
+                className="w-10 cursor-pointer bg-[#2563EB] drop-shadow-[0_0_40px_#3B82F6]  rounded-[8px] p-1"
                 src="./branco-instagram.svg"
                 alt="instagram"
               />
